@@ -17,3 +17,5 @@ ai-service/output_stems/
 # Archivos del Sistema Operativo
 .DS_Store
 Thumbs.db
+
+MongoDB.txt

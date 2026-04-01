@@ -70,5 +70,16 @@ app.get('/api/status/:filename', async (req, res) => {
     }
 });
 
+// Endpoint para obtener todas las pistas procesadas
+app.get('/api/history', async (req, res) => {
+    try {
+        // Busca todos los registros y los ordena del más nuevo al más viejo
+        const history = await Transcription.find().sort({ createdAt: -1 });
+        res.json(history);
+    } catch (error) {
+        res.status(500).json({ error: 'Error al obtener el historial' });
+    }
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Backend orquestador en puerto ${PORT}`));
