@@ -1,0 +1,10 @@
+MongoDB
+
+Usuario: arielp79
+Contraseña: Palanka2026
+
+mongodb+srv://arielp79:<db_password>@cluster0.d5zbhu5.mongodb.net/?appName=Cluster0
+
+
+
+

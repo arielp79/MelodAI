@@ -1,0 +1,19 @@
+# Dependencias de Node (Frontend y Backend)
+node_modules/
+dist/
+
+# Dependencias de Python (Servicio IA)
+venv/
+__pycache__/
+*.pyc
+
+# Variables de entorno (Seguridad)
+.env
+
+# Archivos generados por la aplicación (Audios)
+backend/uploads/
+ai-service/output_stems/
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
